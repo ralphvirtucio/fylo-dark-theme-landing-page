@@ -73,5 +73,36 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.header {
+  background-color: hsl(218, 28%, 13%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.25rem;
+  padding-block: 1.5rem;
+}
+.header__logo img {
+  width: 5rem;
+}
+.header__nav ul {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.header__nav ul a:link, .header__nav ul a:visited, .header__nav ul a:active {
+  color: hsl(0, 0%, 100%);
+}
 
 /*# sourceMappingURL=style.css.map */
