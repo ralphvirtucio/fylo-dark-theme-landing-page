@@ -1,0 +1,36 @@
+@use '../abstract' as *;
+
+.intro {
+  font-family: $font-family-body;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  background-color: $color-bg-intro-email;
+
+  &__img {
+    padding-inline: 1.75rem;
+  }
+
+  &__content {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../images/bg-curvy-mobile.svg);
+    padding-block-end: 7.5rem;
+  }
+
+  &__heading {
+    color: $color-neutral-white;
+    margin-block-end: 1rem;
+    padding-inline: 1.75rem;
+  }
+
+  &__text {
+    color: $color-neutral-white;
+    font-size: $font-size-body;
+    margin-block-end: 1rem;
+    padding-inline: 1.75rem;
+  }
+}

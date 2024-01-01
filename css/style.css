@@ -84,12 +84,13 @@ select {
 }
 
 .header {
-  background-color: hsl(218, 28%, 13%);
+  background-color: hsl(217, 28%, 15%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 1.25rem;
-  padding-block: 1.5rem;
+  padding-block-start: 1.5rem;
+  padding-block-end: 3rem;
 }
 .header__logo img {
   width: 5rem;
@@ -103,6 +104,46 @@ select {
 }
 .header__nav ul a:link, .header__nav ul a:visited, .header__nav ul a:active {
   color: hsl(0, 0%, 100%);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.intro {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  background-color: hsl(217, 28%, 15%);
+}
+.intro__img {
+  padding-inline: 1.75rem;
+}
+.intro__content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../images/bg-curvy-mobile.svg);
+  padding-block-end: 7.5rem;
+}
+.intro__heading {
+  color: hsl(0, 0%, 100%);
+  margin-block-end: 1rem;
+  padding-inline: 1.75rem;
+}
+.intro__text {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.875rem;
+  margin-block-end: 1rem;
+  padding-inline: 1.75rem;
+}
+
+.feature {
+  background-color: hsl(218, 28%, 13%);
 }
 
 /*# sourceMappingURL=style.css.map */

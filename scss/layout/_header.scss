@@ -1,12 +1,13 @@
 @use '../abstract' as *;
 
 .header {
-  background-color: $color-bg-main;
+  background-color: $color-bg-intro-email;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 1.25rem;
-  padding-block: 1.5rem;
+  padding-block-start: 1.5rem;
+  padding-block-end: 3rem;
 
   &__logo {
     img {
