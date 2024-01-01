@@ -29,3 +29,15 @@ a.btn--link {
     font-weight: 700;
   }
 }
+
+.footer__sitemap {
+  li > a {
+    font-family: $font-family-body;
+
+    &:link,
+    &:visited,
+    &:active {
+      color: $color-neutral-white;
+    }
+  }
+}

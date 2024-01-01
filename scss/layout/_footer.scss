@@ -3,4 +3,61 @@
 .footer {
   background-color: $color-bg-intro-email;
   padding-block-start: 16rem;
+  padding-block-end: 3.25rem;
+  padding-inline: 1rem;
+
+  &__logo {
+    width: 6rem;
+    margin-block-end: 2.2rem;
+  }
+}
+
+.footer__website-information {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block-end: 3.5rem;
+
+  li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+.footer__sitemap {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  margin-block-end: 4rem;
+
+  li {
+    &:nth-child(4) {
+      margin-block-end: 2rem;
+    }
+  }
+}
+
+.footer__social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  li {
+    a {
+      border: 1px solid $color-neutral-white;
+      border-radius: 50%;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg path {
+        fill: $color-neutral-white;
+      }
+    }
+  }
 }
