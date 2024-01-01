@@ -103,6 +103,14 @@ p {
   line-height: 1.125rem;
 }
 
+a.btn--link {
+  font-family: "Raleway", sans-serif;
+}
+a.btn--link:link, a.btn--link:visited, a.btn--link:active {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
 .header {
   background-color: hsl(217, 28%, 15%);
   display: flex;
@@ -156,7 +164,7 @@ p {
   padding-inline: 1.75rem;
 }
 .intro__text {
-  margin-block-end: 1rem;
+  margin-block-end: 2rem;
   padding-inline: 1.75rem;
 }
 
@@ -201,7 +209,7 @@ p {
   padding-inline: 3rem;
   background-image: url(../../images/bg-quotes.png);
   background-repeat: no-repeat;
-  padding-block: 11rem;
+  padding-block-start: 11rem;
   background-position: top 155px left 50px;
   background-size: 2rem;
 }
@@ -244,6 +252,78 @@ p {
   font-size: 0.5rem;
   line-height: 0.6rem;
   letter-spacing: 0.04081rem;
+}
+
+.cta {
+  background-color: hsl(217, 28%, 15%);
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.25);
+  padding-inline: 1.75rem;
+  padding-block: 2.5rem;
+  margin-inline: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  transform: translateY(180px);
+}
+.cta h2 {
+  font-size: 1.125rem;
+}
+.cta p {
+  margin-block-start: 1rem;
+  margin-block-end: 2rem;
+}
+
+.form-control--email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.email__input {
+  font-family: "Open Sans", sans-serif;
+  padding-inline-start: 1.8rem;
+  width: 100%;
+  padding-block: 1.2rem;
+  padding-block: 0.8rem;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  font-size: 0.625rem;
+}
+.email__input::placeholder {
+  color: #c0c0c0;
+  font-size: 0.625rem;
+}
+
+.email__error-message {
+  color: hsl(0, 100%, 63%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  margin-inline-start: 1rem;
+}
+
+.footer {
+  background-color: hsl(217, 28%, 15%);
+  padding-block-start: 16rem;
+}
+
+.btn--link {
+  display: inline-block;
+}
+.btn--link.primary-btn {
+  background: linear-gradient(135deg, hsl(176, 68%, 64%) -42.11%, hsl(198, 60%, 50%) 100%);
+  filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+  padding-block: 1rem;
+  padding-inline: 6rem;
+  border-radius: 24px;
+}
+.btn--link.secondary-btn {
+  background: linear-gradient(135deg, hsl(176, 68%, 64%) -42.11%, hsl(198, 60%, 50%) 100%);
+  filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+  font-size: 0.875rem;
+  padding-inline: 4.5rem;
+  padding-block: 1rem;
+  border-radius: 24px;
+  margin-block-start: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

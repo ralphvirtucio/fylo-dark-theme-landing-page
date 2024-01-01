@@ -1,2 +1,10 @@
+@use './variables' as *;
 
-
+@mixin gradient-bg {
+  background: linear-gradient(
+    135deg,
+    $color-cta-cyan -42.11%,
+    $color-cta-blue 100%
+  );
+  filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+}

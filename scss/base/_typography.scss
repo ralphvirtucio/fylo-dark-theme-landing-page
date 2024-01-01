@@ -19,3 +19,13 @@ p {
   font-size: 0.625rem;
   line-height: 1.125rem;
 }
+
+a.btn--link {
+  font-family: $font-family-header;
+  &:link,
+  &:visited,
+  &:active {
+    color: $color-neutral-white;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,6 @@
+@use '../abstract' as *;
+
+.footer {
+  background-color: $color-bg-intro-email;
+  padding-block-start: 16rem;
+}
