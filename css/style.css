@@ -83,6 +83,19 @@ select {
   width: 1px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  color: hsl(0, 0%, 100%);
+}
+
 .header {
   background-color: hsl(217, 28%, 15%);
   display: flex;
@@ -109,6 +122,7 @@ select {
 .main {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: hsl(218, 28%, 13%);
 }
 
 .intro {
@@ -131,19 +145,50 @@ select {
   padding-block-end: 7.5rem;
 }
 .intro__heading {
-  color: hsl(0, 0%, 100%);
   margin-block-end: 1rem;
   padding-inline: 1.75rem;
 }
 .intro__text {
-  color: hsl(0, 0%, 100%);
-  font-size: 0.875rem;
   margin-block-end: 1rem;
   padding-inline: 1.75rem;
 }
 
+.main-feature {
+  padding-inline: 1rem;
+  margin-block-end: 11rem;
+}
+.main-feature__img {
+  margin-block-end: 2.85rem;
+}
+.main-feature__content h2 {
+  font-size: 1.125rem;
+  margin-block-end: 1rem;
+  text-align: center;
+}
+.main-feature__text--1 {
+  margin-block-end: 1rem;
+}
+.main-feature__text--2 {
+  margin-block-end: 1rem;
+}
+
 .feature {
-  background-color: hsl(218, 28%, 13%);
+  margin-block-end: 10rem;
+}
+.feature ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5rem;
+  padding-inline: 1rem;
+}
+.feature ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.feature ul li img {
+  margin-block-end: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

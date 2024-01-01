@@ -1,0 +1,7 @@
+@forward './buttons';
+
+.btn {
+  &--link {
+    display: inline-block;
+  }
+}
