@@ -12,3 +12,10 @@ p {
   font-size: $font-size-body;
   color: $color-neutral-white;
 }
+
+.testimonial__list-item > figure {
+  color: $color-neutral-white;
+  font-family: $font-family-body;
+  font-size: 0.625rem;
+  line-height: 1.125rem;
+}
