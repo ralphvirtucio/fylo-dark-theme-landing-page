@@ -153,19 +153,16 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url(../../images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-block-end: 7.5rem;
   text-align: center;
   gap: 2rem;
   background-color: hsl(217, 28%, 15%);
 }
 .intro__img {
   padding-inline: 1.75rem;
-}
-.intro__content {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url(../../images/bg-curvy-mobile.svg);
-  padding-block-end: 7.5rem;
 }
 .intro__heading {
   margin-block-end: 1rem;
@@ -174,6 +171,25 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
 .intro__text {
   margin-block-end: 2rem;
   padding-inline: 1.75rem;
+}
+
+.feature {
+  margin-block-end: 10rem;
+}
+.feature ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5rem;
+  padding-inline: 1rem;
+}
+.feature ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.feature ul li img {
+  margin-block-end: 1.5rem;
 }
 
 .main-feature {
@@ -196,25 +212,6 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
 }
 .main-feature__text--2 {
   margin-block-end: 1rem;
-}
-
-.feature {
-  margin-block-end: 10rem;
-}
-.feature ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 5rem;
-  padding-inline: 1rem;
-}
-.feature ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.feature ul li img {
-  margin-block-end: 1.5rem;
 }
 
 .testimonial {

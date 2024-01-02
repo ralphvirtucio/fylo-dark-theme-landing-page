@@ -4,6 +4,11 @@
   font-family: $font-family-body;
   @include flex-column-center;
 
+  background-image: url(../../images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-block-end: 7.5rem;
+
   text-align: center;
   gap: 2rem;
   background-color: $color-bg-intro-email;
@@ -12,13 +17,13 @@
     padding-inline: 1.75rem;
   }
 
-  &__content {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../../images/bg-curvy-mobile.svg);
-    padding-block-end: 7.5rem;
-  }
+  // &__content {
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-image: url(../../images/bg-curvy-mobile.svg);
+  //   padding-block-end: 7.5rem;
+  // }
 
   &__heading {
     margin-block-end: 1rem;
