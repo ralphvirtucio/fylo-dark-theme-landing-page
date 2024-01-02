@@ -16,3 +16,15 @@ $font-size-body: 0.875rem;
 
 $font-family-header: 'Raleway', sans-serif;
 $font-family-body: 'Open Sans', sans-serif;
+
+$breakpoints: (
+  'medium': (
+    min-width: 48rem,
+  ),
+  'large': (
+    min-width: 64rem,
+  ),
+  'huge': (
+    min-width: 75rem,
+  ),
+);

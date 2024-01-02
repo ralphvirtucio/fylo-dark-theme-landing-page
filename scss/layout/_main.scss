@@ -4,4 +4,9 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: $color-bg-main;
+
+  // @include respond-to('medium') {
+  //   grid-template-columns: 10vw 20vw 1fr 20vw 10vw;
+  //   grid-template-rows: 1fr 1fr 1fr;
+  // }
 }

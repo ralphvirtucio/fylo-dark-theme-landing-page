@@ -151,6 +151,7 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
   gap: 2rem;
@@ -177,6 +178,10 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
 
 .main-feature {
   padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .main-feature__img {
   margin-block-end: 2.85rem;

@@ -2,9 +2,8 @@
 
 .intro {
   font-family: $font-family-body;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-column-center;
+
   text-align: center;
   gap: 2rem;
   background-color: $color-bg-intro-email;

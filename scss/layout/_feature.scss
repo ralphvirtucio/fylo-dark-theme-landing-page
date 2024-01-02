@@ -2,6 +2,7 @@
 
 .main-feature {
   padding-inline: 1rem;
+  @include flex-column-center;
 
   &__img {
     margin-block-end: 2.85rem;
