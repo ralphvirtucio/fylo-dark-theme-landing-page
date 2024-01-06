@@ -9,12 +9,11 @@
 
   ul {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     row-gap: 5rem;
     padding-inline: 1rem;
 
     @include respond-to('medium') {
-      grid-template-columns: 1fr 1fr;
       column-gap: 5rem;
       place-items: center;
     }

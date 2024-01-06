@@ -2,7 +2,6 @@
 
 .intro {
   font-family: $font-family-body;
-  @include flex-column-center;
 
   // TEMPORARY
   background-image: url(../../images/bg-curvy-mobile.svg);
@@ -11,14 +10,18 @@
   padding-block-end: 6.5rem;
   // Temporary
 
-  @include respond-to('medium') {
-    background-image: url(../../images/bg-curvy-desktop.svg);
-    justify-content: flex-start;
+  &__container {
+    @include flex-column-center;
 
-    &__container {
+    @include respond-to('medium') {
       max-width: 80vw;
       margin-inline: auto;
     }
+  }
+
+  @include respond-to('medium') {
+    background-image: url(../../images/bg-curvy-desktop.svg);
+    justify-content: flex-start;
   }
 
   background-color: $color-bg-intro-email;

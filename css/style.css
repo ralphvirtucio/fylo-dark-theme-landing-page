@@ -149,10 +149,6 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
 
 .intro {
   font-family: "Open Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-image: url(../../images/bg-curvy-mobile.svg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -161,14 +157,22 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
   text-align: center;
   gap: 2rem;
 }
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 48rem) {
+  .intro__container {
+    max-width: 80vw;
+    margin-inline: auto;
+  }
+}
 @media (min-width: 48rem) {
   .intro {
     background-image: url(../../images/bg-curvy-desktop.svg);
     justify-content: flex-start;
-  }
-  .intro__container {
-    max-width: 80vw;
-    margin-inline: auto;
   }
 }
 .intro__img {
@@ -191,13 +195,12 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
 }
 .feature ul {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   row-gap: 5rem;
   padding-inline: 1rem;
 }
 @media (min-width: 48rem) {
   .feature ul {
-    grid-template-columns: 1fr 1fr;
     column-gap: 5rem;
     place-items: center;
   }
