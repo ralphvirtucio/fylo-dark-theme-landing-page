@@ -3,11 +3,21 @@
 .feature {
   margin-block-end: 10rem;
 
+  max-width: 80vw;
+  margin-inline: auto;
+  padding-block-start: 1rem;
+
   ul {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 5rem;
     padding-inline: 1rem;
+
+    @include respond-to('medium') {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 5rem;
+      place-items: center;
+    }
 
     li {
       display: flex;

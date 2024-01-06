@@ -156,10 +156,20 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
   background-image: url(../../images/bg-curvy-mobile.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-block-end: 7.5rem;
+  padding-block-end: 6.5rem;
+  background-color: hsl(217, 28%, 15%);
   text-align: center;
   gap: 2rem;
-  background-color: hsl(217, 28%, 15%);
+}
+@media (min-width: 48rem) {
+  .intro {
+    background-image: url(../../images/bg-curvy-desktop.svg);
+    justify-content: flex-start;
+  }
+  .intro__container {
+    max-width: 80vw;
+    margin-inline: auto;
+  }
 }
 .intro__img {
   padding-inline: 1.75rem;
@@ -175,12 +185,22 @@ a.btn--link:link, a.btn--link:visited, a.btn--link:active {
 
 .feature {
   margin-block-end: 10rem;
+  max-width: 80vw;
+  margin-inline: auto;
+  padding-block-start: 1rem;
 }
 .feature ul {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 5rem;
   padding-inline: 1rem;
+}
+@media (min-width: 48rem) {
+  .feature ul {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    place-items: center;
+  }
 }
 .feature ul li {
   display: flex;

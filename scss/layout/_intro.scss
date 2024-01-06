@@ -4,14 +4,26 @@
   font-family: $font-family-body;
   @include flex-column-center;
 
+  // TEMPORARY
   background-image: url(../../images/bg-curvy-mobile.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-block-end: 7.5rem;
+  padding-block-end: 6.5rem;
+  // Temporary
 
+  @include respond-to('medium') {
+    background-image: url(../../images/bg-curvy-desktop.svg);
+    justify-content: flex-start;
+
+    &__container {
+      max-width: 80vw;
+      margin-inline: auto;
+    }
+  }
+
+  background-color: $color-bg-intro-email;
   text-align: center;
   gap: 2rem;
-  background-color: $color-bg-intro-email;
 
   &__img {
     padding-inline: 1.75rem;
